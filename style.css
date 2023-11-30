@@ -9,6 +9,20 @@
     margin: 0 auto;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.caption{
+    text-align: center;
+}
+
 header {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
     url(/images/Museumsinsel_Berlin_Juli_2021_1.jpg);
@@ -56,8 +70,41 @@ p {
 }
 
 footer {
+    background-image: linear-gradient(rgba(39, 32, 68, 0.6), rgba(39,
+        32,
+        68,
+        0.6)),
+    url(/images/brandenburg_footer.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    color: white;
     font-family: var(--primary-font);
-    text-align: center;
+    padding: 100px 40px;
+}
+
+footer h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    color: white;
+    opacity: 0.7;
+}
+
+footer p {
+    margin: 10px;
 }
 
 @media (max-width: 900px) {
