@@ -4,19 +4,56 @@
     --condensed-font: 'Stint Ultra Condensed', serif;
 }
 
+body {
+    background-color: #5A7A8F;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
+}
+
+p {
+    font-family: var(--primary-font);
+    font-size: 20px;
+}
+
 .container {
-    max-width: 1400px;
     margin: 0 auto;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+main {
+    background-color: white;
+}
+
+.kaiser {
+    height: 450px;
+}
+
+main h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    opacity: 0.5;
+    margin: 0;
+}
+
+main h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    opacity: 0.8;
+    margin: 0;
+}
+
+main p {
+    font-weight: 700;
+    opacity: 0.8;
 }
 
 section {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 100px;
 }
 
 .caption{
@@ -31,8 +68,9 @@ header {
     background-size: cover;
     color: white;
     text-align: center;
-    padding: 180px 0;
-    
+    padding: 180px 10px;
+    max-width: 1400px;
+    margin: auto;
 }
 
 header h1{
@@ -65,11 +103,6 @@ header a {
     margin-top: 32px;
 }
 
-p {
-    font-family: var(--primary-font);
-    font-size: 20px;
-}
-
 footer {
     background-image: linear-gradient(rgba(39, 32, 68, 0.6), rgba(39, 32, 68, 0.6)),
     url(/images/brandenburg_footer.jpeg);
@@ -77,13 +110,28 @@ footer {
     background-size: cover;
     color: white;
     font-family: var(--primary-font);
-    padding: 100px 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 64px;
+}
+
+.grid-2-col {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-col {
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer h3 {
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
+    font-family: var(--primary-font);
 }
 
 footer p {
@@ -121,5 +169,19 @@ footer p {
 
     header h2 {
         font-size: 25px;
+    }
+
+    .img-responsive {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+
+    section {
+        padding: 30px;
     }
 }
