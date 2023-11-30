@@ -50,7 +50,6 @@ header a {
     margin-top: 32px;
 }
 
-
 p {
     font-family: var(--primary-font);
     font-size: 20px;
@@ -59,4 +58,18 @@ p {
 footer {
     font-family: var(--primary-font);
     text-align: center;
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 45px 0;
+    }
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    header h2 {
+        font-size: 25px;
+    }
 }
