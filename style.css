@@ -29,6 +29,10 @@ main {
     height: 450px;
 }
 
+.kaiser-text {
+    font-size: 12px;
+}
+
 main h2 {
     font-weight: 700;
     font-size: 28px;
