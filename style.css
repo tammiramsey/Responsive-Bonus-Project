@@ -211,6 +211,10 @@ footer {
     font-size: 16px;
 }
 
+.spotify {
+    display: none;
+}
+
 .card-footer{
     padding: 10px;
     margin: 5px 0;
@@ -323,6 +327,11 @@ footer p {
 
     .card-header img {
         display: none;
+    }
+
+    .spotify {
+        display:block;
+        padding-top: 15px;
     }
 
     .embed {
